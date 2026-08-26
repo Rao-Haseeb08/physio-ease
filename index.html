@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Rao Jaleed, DPT — Home Physiotherapy</title>
+  <meta name="description"
+    content="Certified home-visit physiotherapy. Assessment, treatment and recovery plans delivered at your doorstep.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #ECE6D8;
+      --paper-light: #FBF8F1;
+      --ink: #1F2E3D;
+      --ink-soft: #4B5A66;
+      --teal: #1F4A45;
+      --teal-deep: #153531;
+      --teal-light: #3C7268;
+      --rust: #C1462F;
+      --rust-soft: #E0714F;
+      --gold: #B8863C;
+      --white: #FFFDF8;
+      --line: rgba(31, 46, 61, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      margin: 0;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    .Pay{
+      color: white;
+    }
+
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--rust);
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    section {
+      padding: 96px 0;
+    }
+
+    @media(max-width:700px) {
+      section {
+        padding: 64px 0;
+      }
+
+      .wrap {
+        padding: 0 20px;
+      }
+    }
+
+    /* ---------- NAV ---------- */
+    header.site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(236, 230, 216, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1.5px solid var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--teal);
+    }
+
+    nav.links {
+      display: flex;
+      gap: 28px;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    nav.links a {
+      color: var(--ink-soft);
+      transition: color .2s;
+    }
+
+    nav.links a:hover {
+      color: var(--rust);
+    }
+
+    .nav-cta {
+      background: var(--teal);
+      color: var(--white);
+      padding: 10px 18px;
+      border-radius: 100px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background .2s, transform .2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--teal-deep);
+      transform: translateY(-1px);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      color: var(--ink);
+    }
+
+    @media(max-width:800px) {
+      nav.links {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      padding: 72px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    @media(max-width:860px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 4.6vw, 3.6rem);
+      line-height: 1.06;
+      max-width: 12ch;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--teal);
+    }
+
+    .hero p.lead {
+      margin-top: 22px;
+      font-size: 1.08rem;
+      line-height: 1.6;
+      color: var(--ink-soft);
+      max-width: 46ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 26px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform .2s, background .2s, box-shadow .2s;
+      border: 1.5px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--rust);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: #a63a25;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px -8px rgba(193, 70, 47, 0.5);
+    }
+
+    .btn-outline {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .btn-outline:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 34px;
+      margin-top: 44px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat b {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 1.6rem;
+      color: var(--teal);
+    }
+
+    .hero-stat span {
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+    }
+
+    .hero-visual {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 14px;
+      position: relative;
+    }
+
+    .hero-visual .hero-img-wrap{
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #0E2233;
+    }
+
+    .hero-visual img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      display: block;
+    }
+
+    .hero-visual svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-tag {
+      position: absolute;
+      bottom: -16px;
+      left: 24px;
+      background: var(--teal);
+      color: var(--white);
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      box-shadow: 0 12px 26px -10px rgba(21, 53, 49, 0.5);
+    }
+
+    /* ---------- TRUST STRIP ---------- */
+    .trust {
+      background: var(--teal);
+      color: var(--white);
+      padding: 44px 0;
+    }
+
+    .trust-inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    @media(max-width:800px) {
+      .trust-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .trust-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .trust-item svg {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      stroke: var(--gold);
+    }
+
+    .trust-item h4 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.94rem;
+      color: var(--white);
+    }
+
+    .trust-item p {
+      margin: 4px 0 0;
+      font-size: 0.82rem;
+      color: rgba(255, 253, 248, 0.72);
+      line-height: 1.5;
+    }
+
+    /* ---------- SECTION HEAD ---------- */
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 56px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      line-height: 1.15;
+    }
+
+    .section-head p {
+      margin-top: 14px;
+      color: var(--ink-soft);
+      font-size: 1.02rem;
+      line-height: 1.6;
+    }
+
+    /* ---------- CONDITIONS ---------- */
+    .conditions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    @media(max-width:820px) {
+      .conditions-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cond-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .cond-card.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .cond-head {
+      padding: 26px 26px 0;
+    }
+
+    .cond-index {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--rust);
+      letter-spacing: 0.1em;
+    }
+
+    .cond-head h3 {
+      font-size: 1.42rem;
+      margin-top: 8px;
+    }
+
+    .cond-head p.cond-desc {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    .cond-svg-wrap {
+      background: #0E2233;
+      margin: 20px 0 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cond-svg-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      display: block;
+    }
+
+    .cond-svg-wrap svg {
+      width: 100%;
+      height: auto;
+      max-height: 280px;
+    }
+
+    .cond-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 20px 26px 26px;
+    }
+
+    .tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
+      padding: 6px 11px;
+      border-radius: 100px;
+      background: rgba(193, 70, 47, 0.09);
+      color: var(--rust);
+      border: 1px solid rgba(193, 70, 47, 0.2);
+    }
+
+    /* SVG animation helpers */
+    .pulse-dot {
+      animation: pulseDot 2.1s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes pulseDot {
+
+      0%,
+      100% {
+        opacity: 0.45;
+        r: 9;
+      }
+
+      50% {
+        opacity: 0.95;
+        r: 13;
+      }
+    }
+
+    .rom-shoulder {
+      animation: swingShoulder 3.4s ease-in-out infinite;
+      transform-origin: 200px 108px;
+    }
+
+    @keyframes swingShoulder {
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(-68deg);
+      }
+    }
+
+    .rom-knee {
+      animation: swingKnee 3.4s ease-in-out infinite;
+      transform-origin: 160px 190px;
+    }
+
+    @keyframes swingKnee {
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(-88deg);
+      }
+    }
+
+    .rom-neck {
+      animation: swingNeck 3.6s ease-in-out infinite;
+      transform-origin: 160px 96px;
+    }
+
+    @keyframes swingNeck {
+
+      0%,
+      100% {
+        transform: rotate(-26deg);
+      }
+
+      50% {
+        transform: rotate(26deg);
+      }
+    }
+
+    .nerve-pulse {
+      animation: nervePulse 2.6s ease-in-out infinite;
+    }
+
+    @keyframes nervePulse {
+      0% {
+        offset-distance: 0%;
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        offset-distance: 100%;
+        opacity: 0;
+      }
+    }
+
+    .dash-flow {
+      stroke-dasharray: 5 6;
+      animation: dashFlow 2.4s linear infinite;
+    }
+
+    @keyframes dashFlow {
+      to {
+        stroke-dashoffset: -44;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .rom-shoulder,
+      .rom-knee,
+      .rom-neck,
+      .pulse-dot,
+      .nerve-pulse,
+      .dash-flow {
+        animation: none !important;
+      }
+    }
+
+    /* ---------- HOW IT WORKS ---------- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    @media(max-width:800px) {
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .step {
+      border-top: 2px solid var(--ink);
+      padding-top: 18px;
+    }
+
+    .step .num {
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--rust);
+      font-size: 0.82rem;
+    }
+
+    .step h4 {
+      font-size: 1.15rem;
+      margin-top: 10px;
+    }
+
+    .step p {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    /* ---------- PACKAGES ---------- */
+    .packages {
+      background: var(--teal-deep);
+      color: var(--white);
+    }
+
+    .packages .section-head p {
+      color: rgba(255, 253, 248, 0.68);
+    }
+
+    .packages .eyebrow {
+      color: var(--gold);
+    }
+
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    @media(max-width:900px) {
+      .pkg-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pkg-card {
+      background: var(--white);
+      color: var(--ink);
+      border-radius: 20px;
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border: 1px solid transparent;
+    }
+
+    .pkg-card.featured {
+      background: var(--paper-light);
+      border: 1.5px solid var(--gold);
+      transform: translateY(-10px);
+    }
+
+    .badge {
+      position: absolute;
+      top: -13px;
+      right: 26px;
+      background: var(--gold);
+      color: var(--teal-deep);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.68rem;
+      padding: 6px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.05em;
+    }
+
+    .pkg-name {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--rust);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .pkg-title {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .pkg-sub {
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+      margin-top: 6px;
+    }
+
+    .pkg-price-row {
+      margin-top: 22px;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pkg-price-old {
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--ink-soft);
+      text-decoration: line-through;
+      font-size: 1.02rem;
+    }
+
+    .pkg-price-new {
+      font-family: 'Fraunces', serif;
+      font-size: 2.1rem;
+      color: var(--teal);
+    }
+
+    .pkg-per {
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+    }
+
+    .pkg-save {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      background: rgba(193, 70, 47, 0.1);
+      color: var(--rust);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .pkg-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+    }
+
+    .pkg-list li {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .pkg-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--rust);
+    }
+
+    .pkg-btn {
+      margin-top: 26px;
+      background: var(--teal);
+      color: var(--white);
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: background .2s, transform .2s;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .pkg-btn:hover {
+      background: var(--teal-deep);
+      transform: translateY(-2px);
+    }
+
+    .pkg-note {
+      margin-top: 34px;
+      font-size: 0.86rem;
+      color: rgba(255, 253, 248, 0.62);
+      text-align: center;
+    }
+    #note{
+      font-size: small;
+      color: rgb(51, 50, 50);
+    }
+
+    /* ---------- AREA / TESTIMONIAL ---------- */
+    .area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    @media(max-width:820px) {
+      .area {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .quote {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 32px;
+    }
+
+    .quote p {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+
+    .quote-author {
+      margin-top: 18px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+    }
+
+    .area-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .area-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.94rem;
+    }
+
+    .area-list li span:last-child {
+      color: var(--ink-soft);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.82rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--ink);
+      color: rgba(255, 253, 248, 0.82);
+      padding: 56px 0 30px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media(max-width:760px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer h4 {
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: rgba(255, 253, 248, 0.62);
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 253, 248, 0.12);
+      font-size: 0.78rem;
+      color: rgba(255, 253, 248, 0.4);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ---------- FLOATING WHATSAPP ---------- */
+    .wa-float {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 60;
+      background: #1F8A5A;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.45);
+      border: none;
+      cursor: pointer;
+      transition: transform .2s;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.08);
+    }
+
+    .wa-float svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    ::selection {
+      background: var(--rust);
+      color: var(--white);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+     EDIT ZONE — replace these before publishing:
+     1. WHATSAPP_NUMBER in the <script> at the bottom (country code + number, no + or spaces)
+     2. Doctor's name: search "Dr. Sana Malik" and replace everywhere
+     3. City / service area: search "Karachi" and replace
+     4. Package prices: search "PRICE:" comments in the Packages section
+     ========================================================= -->
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-mark">DPT</span>
+        Dr. Rao Jaleed
+      </div>
+      <nav class="links">
+        <a href="#conditions">Conditions We Treat</a>
+        <a href="#how">How It Works</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#" class="nav-cta" onclick="bookGeneral(event)">
+        Book on WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">Home-Visit Physiotherapy</span>
+        <h1>Recovery, <em>without</em> the commute to a clinic.</h1>
+        <p class="lead">Dr. Rao Jaleed brings certified physiotherapy assessment and treatment straight to your home 
+          proper equipment, a personal recovery plan, and one-on-one attention every session.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" onclick="bookGeneral(event)">
+            Book a Home Visit
+          </a>
+          <a href="#conditions" class="btn btn-outline">See Common Conditions</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>100+</b><span>home sessions completed</span></div>
+          <div class="hero-stat"><b>Dr jaleed PT</b><span>certified &amp; licensed</span></div>
+          <div class="hero-stat"><b>0 yrs</b><span>clinical experience</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <img src="hero-section.png" alt="Physiotherapist treating a patient during a home visit">
+        </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST STRIP ================= -->
+  <section class="trust">
+    <div class="wrap trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <path d="M3 12l2-2 4 4 10-10 2 2-12 12z" />
+        </svg>
+        <div>
+          <h4>No clinic visit needed</h4>
+          <p>Full assessment &amp; treatment at your doorstep.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+        </svg>
+        <div>
+          <h4>DPT-certified therapist</h4>
+          <p>Every session led personally by Dr.Rao Jaleed.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <path d="M8 2v4M16 2v4M3 10h18" />
+        </svg>
+        <div>
+          <h4>Flexible scheduling</h4>
+          <p>Morning, evening or weekend slots, your choice.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+          <path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
+        </svg>
+        <div>
+          <h4>Portable clinical equipment</h4>
+          <p>Same tools used in-clinic, brought to you, sanitised.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMON CONDITIONS ================= -->
+  <section id="conditions">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we treat most often</span>
+        <h2>The conditions patients ask about most</h2>
+        <p>Each diagram shows exactly where the problem sits and how far the joint can safely move, the same way it's
+          explained to you in your first home visit.</p>
+      </div>
+
+      <div class="conditions-grid">
+
+        <!-- CARD 1: FROZEN SHOULDER -->
+        <article class="cond-card">
+          <div class="cond-head">
+            <span class="cond-index">01 / Shoulder</span>
+            <h3>Frozen Shoulder (Adhesive Capsulitis)</h3>
+            <p class="cond-desc">The shoulder capsule tightens and thickens, sharply limiting how far the arm can lift
+              or rotate, often worse at night.</p>
+          </div>
+          <div class="cond-svg-wrap">
+            <img src="frozen-shoulder.png" alt="Anatomical illustration of a frozen shoulder">
+          </div>
+          <div class="cond-tags">
+            <span class="tag">Restricted lift</span>
+            <span class="tag">Night pain</span>
+            <span class="tag">Stiff capsule</span>
+          </div>
+        </article>
+
+        <!-- CARD 2: LOWER BACK / SCIATICA -->
+        <article class="cond-card">
+          <div class="cond-head">
+            <span class="cond-index">02 / Lower Back</span>
+            <h3>Lower Back Pain &amp; Sciatica</h3>
+            <p class="cond-desc">Pressure on the lumbar spine irritates the sciatic nerve, sending pain, tingling or
+              numbness down the back of the leg.</p>
+          </div>
+          <div class="cond-svg-wrap">
+            <img src="L4-L5.png" alt="Anatomical illustration of lumbar spine and sciatica">
+          </div>
+          <div class="cond-tags">
+            <span class="tag">Nerve pain</span>
+            <span class="tag">Stiff mornings</span>
+            <span class="tag">Leg numbness</span>
+          </div>
+        </article>
+
+        <!-- CARD 3: KNEE OSTEOARTHRITIS -->
+        <article class="cond-card">
+          <div class="cond-head">
+            <span class="cond-index">03 / Knee</span>
+            <h3>Knee Osteoarthritis</h3>
+            <p class="cond-desc">Cartilage wear at the knee joint causes stiffness, swelling and a noticeably reduced
+              ability to bend the knee fully.</p>
+          </div>
+          <div class="cond-svg-wrap">
+            <img src="knee-osteo.png" alt="Anatomical illustration of knee osteoarthritis">
+          </div>
+          <div class="cond-tags">
+            <span class="tag">Joint stiffness</span>
+            <span class="tag">Swelling</span>
+            <span class="tag">Reduced bending</span>
+          </div>
+        </article>
+
+        <!-- CARD 4: CERVICAL / NECK PAIN -->
+        <article class="cond-card">
+          <div class="cond-head">
+            <span class="cond-index">04 / Neck</span>
+            <h3>Cervical Pain (Neck Stiffness)</h3>
+            <p class="cond-desc">Muscle tightness and joint stiffness in the cervical spine limit how far the head can
+              turn, often radiating pain into the shoulder.</p>
+          </div>
+          <div class="cond-svg-wrap">
+            <img src="neck-stiff.png" alt="Anatomical illustration of cervical neck stiffness">
+          </div>
+          <div class="cond-tags">
+            <span class="tag">Restricted turn</span>
+            <span class="tag">Muscle spasm</span>
+            <span class="tag">Referred pain</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Simple &amp; direct</span>
+        <h2>How a home visit works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">01</span>
+          <h4>Message on WhatsApp</h4>
+          <p>Pick a package below or just say hello, you'll be sharing your condition and preferred time directly with
+            Dr. Rao Jaleed.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <h4>Assessment at your home</h4>
+          <p>A full physical assessment is done at your doorstep with portable clinical equipment, no clinic visit
+            required.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <h4>Personalised recovery plan</h4>
+          <p>You get a treatment plan built around your condition, with progress tracked across every following session.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PACKAGES ================= -->
+  <section id="packages" class="packages">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Sessions &amp; packages</span>
+        <h2 class="Pay">Pay per visit, or save on a plan</h2>
+        <p>The more sessions you commit to upfront, the lower your per-session rate, ideal for conditions that need
+          consistent, ongoing therapy.</p>
+      </div>
+
+      <div class="pkg-grid">
+
+        <!-- PRICE: single session — edit values below -->
+        <div class="pkg-card">
+          <span class="pkg-name">Single Visit</span>
+          <h3 class="pkg-title">Comprehensible First Assessment</h3>
+          <p class="pkg-sub">Best for a first assessment or a one-off issue.</p>
+          <div class="pkg-price-row">
+            <span class="pkg-price-old">Rs. 2,000</span>
+            <span class="pkg-price-new">Rs. 1,500</span>
+          </div>
+          <span class="pkg-save">Save Rs. 500</span>
+          <ul class="pkg-list">
+            <li>60 minute home visit</li>
+            <li>Detailed Physiotherapy Assessment</li>
+            <li>Initial Treatment &amp; Manual Therapy</li>
+            <li>Personalized Exercise &amp; Home Program</li>
+            <li>Counselling, Education &amp; Treatment Plan </li>
+            <p id="note">NOTE: Prices may vary depending on the patient’s condition and treatment requirements.</p>
+          </ul>
+          <button class="pkg-btn" onclick="bookPackage('Single Visit — 1 Session', 'Rs. 1,500')">
+            Book Now
+          </button>
+        </div>
+
+        <!-- PRICE: 5-session pack — edit values below -->
+        <div class="pkg-card featured">
+          <span class="badge">Most Popular</span>
+          <span class="pkg-name">5-Session Pack</span>
+          <h3 class="pkg-title">Recovery Bundle</h3>
+          <p class="pkg-sub">For conditions needing consistent short-term therapy.</p>
+          <div class="pkg-price-row">
+            <span class="pkg-price-new">Rs. 10,000</span>
+          </div> <br>
+            <li>5 home sessions, scheduled flexibly</li> <br>
+            <li>Personalized Treatment Plan</li> <br>
+            <li>Therapeutic Exercises &amp; Manual Therapy </li> <br>
+            <li>Progress Monitoring</li> <br>
+            <li>Home Exercise &amp; Recovery Guidance</li>
+            <p id="note">NOTE: Prices may vary depending on the patient’s condition and treatment requirements.</p>
+          </ul>
+          <button class="pkg-btn" onclick="bookPackage('5-Session Recovery Bundle', 'Rs. 10,000')">
+            Book Now
+          </button>
+        </div>
+
+        <!-- PRICE: full month pack — edit values below -->
+        <div class="pkg-card">
+          <span class="pkg-name">Full Month</span>
+          <h3 class="pkg-title">Monthly Care Plan</h3>
+          <p class="pkg-sub">best for long-term recovery.</p>
+          <div class="pkg-price-row">
+            <span class="pkg-price-old">Rs. 40,000</span>
+            <span class="pkg-price-new">Rs. 32,000</span>
+          </div> <br>
+            <li>20 home sessions across the month</li> <br>
+            <li>Comprehensive Progress Monitoring </li> <br>
+            <li>Therapeutic Exercise Program</li> <br>
+            <li>Regular Reassessment &amp; Plan Adjustment</li> <br>
+            <li>Professional Guidance Throughout Recovery</li>
+            <p id="note">NOTE: Prices may vary depending on the patient’s condition and treatment requirements.</p>
+          </ul>
+          <button class="pkg-btn" onclick="bookPackage('Monthly Care Plan — 12 Sessions', 'Rs. 22,000')">
+            Book Now
+          </button>
+        </div>
+
+      </div>
+      <p class="pkg-note">All packages are for home visits only.</p>
+    </div>
+  </section>
+
+  <!-- ================= SERVICE AREA / TRUST ================= -->
+  <section>
+    <div class="wrap area">
+      <div>
+        <span class="eyebrow">Where we visit</span>
+        <h2>Home visits across Karachi</h2>
+        <ul class="area-list">
+          <li><span>DHA &amp; Clifton</span><span>Same-day slots</span></li>
+          <li><span>Gulshan &amp; Gulistan-e-Jauhar</span><span>Next-day slots</span></li>
+          <li><span>North Nazimabad &amp; PECHS</span><span>Next-day slots</span></li>
+          <li><span>Other areas</span><span>Ask on WhatsApp</span></li>
+        </ul>
+      </div>
+      <div class="quote">
+        <p>"Dr. Jaleed came home for my mother's knee therapy — professional, punctual, and her mobility has genuinely
+          improved in three weeks."</p>
+        <div class="quote-author">— A. RIZVI, PATIENT'S FAMILY</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contact">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Dr. Rao Jaleed , DPT</div>
+          <p style="margin-top:10px;max-width:34ch;">Certified home-visit physiotherapist providing assessment,
+            treatment and recovery plans across Karachi.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p><a href="#conditions">Conditions We Treat</a></p>
+          <p><a href="#how">How It Works</a></p>
+          <p><a href="#packages">Packages &amp; Pricing</a></p>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <p><a href="#" onclick="bookGeneral(event)">Chat on WhatsApp</a></p>
+          <p>Mon–Sat, 9am – 8pm</p>
+          <p>Karachi, Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dr. Rao Jaleed Physiotherapy. All rights reserved.</span>
+        <span>Home-visit service only, no clinic address.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <button class="wa-float" onclick="bookGeneral(event)" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor">
+      <path
+        d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.693 4.61 1.885 6.484L4 29l7.723-1.85A11.93 11.93 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.997 17.09c-.293.827-1.457 1.53-2.386 1.727-.634.135-1.462.243-4.254-.914-3.567-1.48-5.86-5.1-6.038-5.34-.177-.24-1.44-1.916-1.44-3.655 0-1.74.913-2.594 1.238-2.95.325-.356.71-.446.947-.446.237 0 .474.002.68.012.219.01.512-.083.8.61.294.71.997 2.45 1.084 2.627.088.177.147.384.03.622-.118.24-.177.386-.354.594-.177.207-.373.463-.532.622-.177.177-.36.37-.155.727.207.356.916 1.51 1.966 2.446 1.35 1.203 2.489 1.576 2.845 1.753.356.177.563.148.77-.09.207-.238.888-1.036 1.124-1.392.237-.355.474-.296.799-.178.325.119 2.06.972 2.414 1.148.354.178.59.267.68.415.088.148.088.858-.207 1.686z" />
+    </svg>
+  </button>
+
+  <script>
+    // ================== CONFIG — EDIT THIS ==================
+    // Replace with the physiotherapist's WhatsApp number.
+    // Format: country code + number, digits only, no + no spaces.
+    // Example for a Pakistan number 0300-1234567 -> "923001234567"
+    const WHATSAPP_NUMBER = "923112401748";
+    const DOCTOR_FIRST_NAME = "Rao Jaleed"; // used inside the pre-filled message
+    // ==========================================================
+
+    function openWhatsApp(message) {
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank", "noopener");
+    }
+
+    function bookPackage(packageName, price) {
+      const msg = `Hi Dr. ${DOCTOR_FIRST_NAME}, I'd like to book the "${packageName}" package (${price}) for a home physiotherapy visit. Here are my details:\n\nName:\nCondition / area of pain:\nPreferred date & time:\nAddress / area:`;
+      openWhatsApp(msg);
+    }
+
+    function bookGeneral(e) {
+      if (e) e.preventDefault();
+      const msg = `Hi Dr. ${DOCTOR_FIRST_NAME}, I'd like to know more about your home physiotherapy services.\n\nName:\nCondition / area of pain:\nArea (Karachi):`;
+      openWhatsApp(msg);
+    }
+
+    // Scroll reveal for condition cards
+    const cards = document.querySelectorAll(".cond-card");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      cards.forEach(c => io.observe(c));
+    } else {
+      cards.forEach(c => c.classList.add("in-view"));
+    }
+  </script>
+
+</body>
+
+</html>
