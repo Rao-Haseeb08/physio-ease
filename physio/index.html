@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap"
     rel="stylesheet">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
   <style>
     :root {
       --paper: #ECE6D8;
@@ -1112,16 +1113,7 @@
   </style>
 </head>
 
-<body>
-
-  <!-- =========================================================
-     EDIT ZONE — replace these before publishing:
-     1. WHATSAPP_NUMBER in the <script> at the bottom (country code + number, no + or spaces)
-     2. Doctor's name: search "Dr. Sana Malik" and replace everywhere
-     3. City / service area: search "Karachi" and replace
-     4. Package prices: search "PRICE:" comments in the Packages section
-     ========================================================= -->
-
+<body> 
   <header class="site-nav">
     <div class="nav-inner">
       <div class="brand">
@@ -1475,7 +1467,7 @@
 
       <div class="pkg-grid">
 
-        <!-- PRICE: single session — edit values below -->
+        <!-- PRICE: single session -->
         <div class="pkg-card">
           <span class="pkg-name">Single Visit</span>
           <h3 class="pkg-title">Comprehensible First Assessment</h3>
@@ -1498,7 +1490,7 @@
           </button>
         </div>
 
-        <!-- PRICE: 5-session pack — edit values below -->
+        <!-- PRICE: 5-session pack -->
         <div class="pkg-card featured">
           <span class="badge">Most Popular</span>
           <span class="pkg-name">5-Session Pack</span>
@@ -1519,7 +1511,7 @@
           </button>
         </div>
 
-        <!-- PRICE: full month pack — edit values below -->
+        <!-- PRICE: full month pack -->
         <div class="pkg-card">
           <span class="pkg-name">Full Month</span>
           <h3 class="pkg-title">Monthly Care Plan</h3>
@@ -1601,13 +1593,9 @@
 
   <script>
     // ================== CONFIG — EDIT THIS ==================
-    // Replace with the physiotherapist's WhatsApp number.
-    // Format: country code + number, digits only, no + no spaces.
-    // Example for a Pakistan number 0300-1234567 -> "923001234567"
+    
     const WHATSAPP_NUMBER = "923112401748";
-    const DOCTOR_FIRST_NAME = "Rao Jaleed"; // used inside the pre-filled message
-    // ==========================================================
-
+    const DOCTOR_FIRST_NAME = "Rao Jaleed"; 
     function openWhatsApp(message) {
       const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank", "noopener");
@@ -1624,7 +1612,7 @@
       openWhatsApp(msg);
     }
 
-    // Scroll reveal for condition cards
+    
     const cards = document.querySelectorAll(".cond-card");
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver((entries) => {
